@@ -1,0 +1,52 @@
+@charset "UTF-8";
+/*-------------------------------------------------------------------------
+ * NAMNCN
+ * ------------------------------------------------------------------------
+ * CSS by NAMNCN
+ * Websites:  http://www.namncn.com -  Email: nam.truong.ncn@gmail.com
+--------------------------------------------------------------------------------*/
+
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute !important;
+  width: 1px;
+  word-wrap: normal !important;
+}
+.list_item {
+  margin-bottom: 10px;
+}
+.list_item:before,
+.list_item:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.list_item-thumb {
+  float: left;
+  margin-right: 10px;
+  width: 100px;
+  height: 68px;
+  overflow: hidden;
+  position: relative;
+}
+.list_item-details {
+  overflow: hidden;
+}
+.list_item-thumb a {
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.post-meta {
+  color: #aaa;
+  font-size: 80%;
+  margin-top: 5px;
+}
+.post-meta .fa {
+  margin-right: 3px;
+}
