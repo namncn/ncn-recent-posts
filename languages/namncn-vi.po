@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: NCN: Recent Posts\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-10-07 04:23+0000\n"
-"PO-Revision-Date: 2016-10-07 04:24+0000\n"
+"POT-Creation-Date: 2016-10-07 05:09+0000\n"
+"PO-Revision-Date: 2016-10-07 05:09+0000\n"
 "Last-Translator: namncn <nam.truong.ncn@gmail.com>\n"
 "Language-Team: Vietnamese\n"
 "Language: vi\n"
@@ -13,13 +13,13 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Loco - https://localise.biz/"
 
-#. Description of the plugin
-msgid "Show recent posts using widget."
-msgstr "Hiển thị bài viết mới sử dụng widget."
+#: includes/widgets/class-ncn-recent-posts-widget.php:81
+msgid "Display post date and comments number?"
+msgstr "Hiển thị ngày đăng bài và số lượng bình luận?"
 
-#. URI of the plugin
-msgid "http://namncn.com/plugins/ncn-recent-posts/"
-msgstr "http://namncn.com/plugins/ncn-recent-posts/"
+#: includes/widgets/class-ncn-recent-posts-widget.php:30
+msgid "Show recent posts."
+msgstr "Hiển thị bài viết mới."
 
 #. Name of the plugin
 #: includes/widgets/class-ncn-recent-posts-widget.php:32
@@ -55,30 +55,10 @@ msgstr ""
 "cả các bài viết) được sử dụng."
 
 #: includes/widgets/class-ncn-recent-posts-widget.php:57
-msgid "Order:"
-msgstr "Sắp xếp bài viết theo thứ tự:"
-
-#: includes/widgets/class-ncn-recent-posts-widget.php:58
-msgid ""
-"Designates the ascending or descending order of the 'orderby' parameter. "
-"Defaults to 'DESC'"
-msgstr ""
-"Tham số 'orderby' sẽ hiển thị bài viết theo thứ tự tăng dần hoặc giảm dần. "
-"Mặc định là 'DESC' (Giảm dần)."
-
-#: includes/widgets/class-ncn-recent-posts-widget.php:60
-msgid "Descending"
-msgstr "Giảm dần"
-
-#: includes/widgets/class-ncn-recent-posts-widget.php:61
-msgid "Ascending"
-msgstr "Tăng dần"
-
-#: includes/widgets/class-ncn-recent-posts-widget.php:67
 msgid "Orderby:"
 msgstr "Sắp xếp theo tham số:"
 
-#: includes/widgets/class-ncn-recent-posts-widget.php:68
+#: includes/widgets/class-ncn-recent-posts-widget.php:58
 msgid ""
 "Sort retrieved posts by parameter. Defaults to 'date (post_date)'. One or "
 "more options can be passed."
@@ -86,53 +66,61 @@ msgstr ""
 "Sắp xếp bài viết theo tham số. Mặc định là 'date (post_date)'. Có thể sử "
 "dụng một hoặc nhiều tham số cùng lúc."
 
-#: includes/widgets/class-ncn-recent-posts-widget.php:70
+#: includes/widgets/class-ncn-recent-posts-widget.php:60
 msgid "No order"
 msgstr "Không sắp xếp"
 
-#: includes/widgets/class-ncn-recent-posts-widget.php:71
+#: includes/widgets/class-ncn-recent-posts-widget.php:61
 msgid "Date"
 msgstr "Ngày đăng"
 
-#: includes/widgets/class-ncn-recent-posts-widget.php:72
+#: includes/widgets/class-ncn-recent-posts-widget.php:62
 msgid "Post id"
 msgstr "ID bài viết"
 
-#: includes/widgets/class-ncn-recent-posts-widget.php:73
+#: includes/widgets/class-ncn-recent-posts-widget.php:63
 msgid "Author"
 msgstr "Tác giả"
 
-#: includes/widgets/class-ncn-recent-posts-widget.php:74
+#: includes/widgets/class-ncn-recent-posts-widget.php:64
 msgid "Title"
 msgstr "Tiêu đề"
 
-#: includes/widgets/class-ncn-recent-posts-widget.php:75
+#: includes/widgets/class-ncn-recent-posts-widget.php:65
 msgid "Post name (post slug)"
 msgstr "Tên bài viết (slug bài của viết)."
 
-#: includes/widgets/class-ncn-recent-posts-widget.php:76
+#: includes/widgets/class-ncn-recent-posts-widget.php:66
 msgid "Post type"
 msgstr "Loại bài viết"
 
-#: includes/widgets/class-ncn-recent-posts-widget.php:77
+#: includes/widgets/class-ncn-recent-posts-widget.php:67
 msgid "Last modified date"
 msgstr "Ngày sửa đổi cuối cùng"
 
-#: includes/widgets/class-ncn-recent-posts-widget.php:78
+#: includes/widgets/class-ncn-recent-posts-widget.php:68
 msgid "Post/page parent id"
 msgstr "Bài đăng mẹ"
 
-#: includes/widgets/class-ncn-recent-posts-widget.php:79
+#: includes/widgets/class-ncn-recent-posts-widget.php:69
 msgid "Random order"
 msgstr "Ngẫu nhiên"
 
-#: includes/widgets/class-ncn-recent-posts-widget.php:80
+#: includes/widgets/class-ncn-recent-posts-widget.php:70
 msgid "Number of comments"
 msgstr "Số lượng bình luận"
 
-#: includes/widgets/class-ncn-recent-posts-widget.php:81
+#: includes/widgets/class-ncn-recent-posts-widget.php:71
 msgid "Page Order"
 msgstr "Thứ tự trang"
+
+#. Description of the plugin
+msgid "Show recent posts using widget."
+msgstr "Hiển thị bài viết mới sử dụng widget."
+
+#. URI of the plugin
+msgid "http://namncn.com/plugins/ncn-recent-posts/"
+msgstr "http://namncn.com/plugins/ncn-recent-posts/"
 
 #. Author of the plugin
 msgid "Nam NCN"

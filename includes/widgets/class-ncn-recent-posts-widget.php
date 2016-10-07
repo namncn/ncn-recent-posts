@@ -51,16 +51,6 @@ class NCN_Recent_Posts_Widget extends NCN_Widget {
 				'label' => esc_html__( 'Number of post to displace or pass over:', 'namncn' ),
 				'desc'  => esc_html__( 'The \'offset\' parameter is ignored when \'posts_per_page\'=>-1 (show all posts) is used.', 'namncn' ),
 			),
-			'order' => array(
-				'type'  => 'select',
-				'std'   => 'DESC',
-				'label' => esc_html__( 'Order:', 'namncn' ),
-				'desc'  => esc_html__( 'Designates the ascending or descending order of the \'orderby\' parameter. Defaults to \'DESC\'', 'namncn' ),
-				'options' => array(
-					'DESC' => esc_html__( 'Descending', 'namncn' ),
-					'ASC'  => esc_html__( 'Ascending', 'namncn' ),
-				),
-			),
 			'orderby' => array(
 				'type'    => 'select',
 				'std'     => 'date',
@@ -84,6 +74,11 @@ class NCN_Recent_Posts_Widget extends NCN_Widget {
 					// 'post__in'       => esc_html__( 'Preserve post ID order given in the post__in array', 'namncn' ),
 					// 'post_name__in'  => esc_html__( 'Preserve post slug order given in the post_name__in array', 'namncn' ),
 				),
+			),
+			'meta' => array(
+				'type'  => 'checkbox',
+				'std'   => 1,
+				'label' => esc_html__( 'Display post date and comments number?', 'namncn' ),
 			),
 		);
 
@@ -109,10 +104,6 @@ class NCN_Recent_Posts_Widget extends NCN_Widget {
 
 		if ( $offset ) {
 			$post_args['offset'] = $offset;
-		}
-
-		if ( $order ) {
-			$post_args['order'] = $order;
 		}
 
 		if ( $orderby ) {
@@ -144,12 +135,17 @@ class NCN_Recent_Posts_Widget extends NCN_Widget {
 					<div class="list_item-details">
 						<?php the_title( '<a href="' . get_the_permalink() . '" class="post-title">', '</a>' ); ?>
 
+						<?php if ( $meta ) : ?>
+
 						<div class="post-meta">
 
 							<span class="post-date"><i class="fa fa-clock-o"></i><?php the_time( 'd/m/Y' ); ?></span>
 							<?php $this->ncn_comments_link(); ?>
 
 						</div>
+
+						<?php endif; ?>
+
 					</div><!-- .list_item-details -->
 
 				</div><!-- .list_item -->
