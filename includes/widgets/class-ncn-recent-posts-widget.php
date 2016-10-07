@@ -122,34 +122,45 @@ class NCN_Recent_Posts_Widget extends NCN_Widget {
 		$post_query = new WP_Query( $post_args );
 
 		$this->widget_start( $args, $instance );
-		?>
 
-		<?php if ( $post_query->have_posts() ) : ?>
+		if ( $post_query->have_posts() ) : ?>
+
 			<div class="ncn-recent-posts">
+
 			<?php while ( $post_query->have_posts() ) : $post_query->the_post(); ?>
+
 				<div class="list_item">
-					<?php if ( has_post_thumbnail() ) : ?>
+
 					<div class="list_item-thumb">
+						<?php if ( has_post_thumbnail() ) : ?>
+
 						<a href="<?php the_permalink(); ?>">
 							<?php the_post_thumbnail( 'thumbnail' ); ?>
 						</a>
+
+						<?php endif; ?>
 					</div><!-- .list_item-thumb -->
-					<?php endif; ?>
 
 					<div class="list_item-details">
 						<?php the_title( '<a href="' . get_the_permalink() . '" class="post-title">', '</a>' ); ?>
+
 						<div class="post-meta">
+
 							<span class="post-date"><i class="fa fa-clock-o"></i><?php the_time( 'd/m/Y' ); ?></span>
 							<?php $this->ncn_comments_link(); ?>
+
 						</div>
 					</div><!-- .list_item-details -->
-				</div><!-- .list_item -->
-			<?php endwhile; ?>
-			</div><!-- .ncn-recent-posts -->
-			<?php wp_reset_postdata(); ?>
-		<?php endif; ?>
 
-		<?php
+				</div><!-- .list_item -->
+
+			<?php endwhile; ?>
+
+			</div><!-- .ncn-recent-posts -->
+
+			<?php wp_reset_postdata();
+		endif;
+
 		$this->widget_end( $args );
 	}
 
@@ -183,8 +194,10 @@ class NCN_Recent_Posts_Widget extends NCN_Widget {
 
 		if ( ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
 			echo '<span class="comments-link">';
-			echo '<i class="fa fa-comments"></i>';
-			comments_popup_link( false, $one, $more );
+
+				echo '<i class="fa fa-comments"></i>';
+				comments_popup_link( false, $one, $more );
+
 			echo '</span>';
 		}
 	}
