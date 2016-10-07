@@ -5,7 +5,7 @@
  * Author: Nam NCN
  * Author URI: http://namncn.com/about/
  * Version: 1.0.0
- * Description: Show recent posts.
+ * Description: Show recent posts using widget.
  * Tags:
  * Text Domain: namncn
  * Domain Path: /languages/
