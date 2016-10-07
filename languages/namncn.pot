@@ -3,21 +3,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-10-06 10:16+0000\n"
+"POT-Creation-Date: 2016-10-07 04:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
 "Language: \n"
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Loco https://localise.biz/"
-
-#. Description of the plugin
-#: includes/widgets/class-ncn-recent-posts-widget.php:30
-msgid "Show recent posts."
-msgstr ""
+"X-Generator: Loco - https://localise.biz/"
 
 #. Name of the plugin
 #: includes/widgets/class-ncn-recent-posts-widget.php:32
@@ -40,94 +35,98 @@ msgstr ""
 msgid "Fill \"-1\" to show all posts"
 msgstr ""
 
-#: includes/widgets/class-ncn-recent-posts-widget.php:48
+#: includes/widgets/class-ncn-recent-posts-widget.php:51
 msgid "Number of post to displace or pass over:"
 msgstr ""
 
-#: includes/widgets/class-ncn-recent-posts-widget.php:49
+#: includes/widgets/class-ncn-recent-posts-widget.php:52
 msgid ""
 "The 'offset' parameter is ignored when 'posts_per_page'=>-1 (show all posts) "
 "is used."
 msgstr ""
 
-#: includes/widgets/class-ncn-recent-posts-widget.php:54
+#: includes/widgets/class-ncn-recent-posts-widget.php:57
 msgid "Order:"
 msgstr ""
 
-#: includes/widgets/class-ncn-recent-posts-widget.php:55
+#: includes/widgets/class-ncn-recent-posts-widget.php:58
 msgid ""
 "Designates the ascending or descending order of the 'orderby' parameter. "
 "Defaults to 'DESC'"
 msgstr ""
 
-#: includes/widgets/class-ncn-recent-posts-widget.php:57
+#: includes/widgets/class-ncn-recent-posts-widget.php:60
 msgid "Descending"
 msgstr ""
 
-#: includes/widgets/class-ncn-recent-posts-widget.php:58
+#: includes/widgets/class-ncn-recent-posts-widget.php:61
 msgid "Ascending"
 msgstr ""
 
-#: includes/widgets/class-ncn-recent-posts-widget.php:64
+#: includes/widgets/class-ncn-recent-posts-widget.php:67
 msgid "Orderby:"
 msgstr ""
 
-#: includes/widgets/class-ncn-recent-posts-widget.php:65
+#: includes/widgets/class-ncn-recent-posts-widget.php:68
 msgid ""
 "Sort retrieved posts by parameter. Defaults to 'date (post_date)'. One or "
 "more options can be passed."
 msgstr ""
 
-#: includes/widgets/class-ncn-recent-posts-widget.php:67
+#: includes/widgets/class-ncn-recent-posts-widget.php:70
 msgid "No order"
 msgstr ""
 
-#: includes/widgets/class-ncn-recent-posts-widget.php:68
+#: includes/widgets/class-ncn-recent-posts-widget.php:71
 msgid "Date"
 msgstr ""
 
-#: includes/widgets/class-ncn-recent-posts-widget.php:69
+#: includes/widgets/class-ncn-recent-posts-widget.php:72
 msgid "Post id"
 msgstr ""
 
-#: includes/widgets/class-ncn-recent-posts-widget.php:70
+#: includes/widgets/class-ncn-recent-posts-widget.php:73
 msgid "Author"
 msgstr ""
 
-#: includes/widgets/class-ncn-recent-posts-widget.php:71
+#: includes/widgets/class-ncn-recent-posts-widget.php:74
 msgid "Title"
 msgstr ""
 
-#: includes/widgets/class-ncn-recent-posts-widget.php:72
+#: includes/widgets/class-ncn-recent-posts-widget.php:75
 msgid "Post name (post slug)"
 msgstr ""
 
-#: includes/widgets/class-ncn-recent-posts-widget.php:73
+#: includes/widgets/class-ncn-recent-posts-widget.php:76
 msgid "Post type"
 msgstr ""
 
-#: includes/widgets/class-ncn-recent-posts-widget.php:74
+#: includes/widgets/class-ncn-recent-posts-widget.php:77
 msgid "Last modified date"
 msgstr ""
 
-#: includes/widgets/class-ncn-recent-posts-widget.php:75
+#: includes/widgets/class-ncn-recent-posts-widget.php:78
 msgid "Post/page parent id"
 msgstr ""
 
-#: includes/widgets/class-ncn-recent-posts-widget.php:76
+#: includes/widgets/class-ncn-recent-posts-widget.php:79
 msgid "Random order"
 msgstr ""
 
-#: includes/widgets/class-ncn-recent-posts-widget.php:77
+#: includes/widgets/class-ncn-recent-posts-widget.php:80
 msgid "Number of comments"
 msgstr ""
 
-#: includes/widgets/class-ncn-recent-posts-widget.php:78
+#: includes/widgets/class-ncn-recent-posts-widget.php:81
 msgid "Page Order"
 msgstr ""
 
+#. Description of the plugin
+msgid "Show recent posts using widget."
+msgstr ""
+
 #. URI of the plugin
-msgid "http://namncn.com/product/plugins/ncn-recent-posts/"
+msgid "http://namncn.com/plugins/ncn-recent-posts/"
 msgstr ""
 
 #. Author of the plugin
